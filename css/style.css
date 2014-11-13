@@ -1,0 +1,36 @@
+#top-img-area {
+	display: block;
+	height: 80%;
+}
+.top-img {
+	width: 100%;
+	overflow: hidden;
+	height: 100%;
+	text-align: center;
+	position: relative;
+}
+.top-img img{
+	position: relative;
+	min-height: 100%;
+	min-width: 100%;
+	height: auto;
+	width: auto;
+	left: 100%;
+	margin-left: -200%;
+}
+.top-img-desc {
+	position: absolute;
+	z-index: 10;
+	bottom: 30%;
+	left: 10%;
+}
+.top-img-desc h1 {
+	font-family: 'anton', sans-serif;
+	color: rgba(210, 219, 255, 0.75);
+	font-size: 80px;
+}
+
+#conf-desc-area{
+	padding-left: 10%;
+	padding-right: 10%;
+}
