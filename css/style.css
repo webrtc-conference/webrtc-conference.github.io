@@ -102,6 +102,9 @@ Main components
 		font-size: 80px;
 	}
 }
+.webRTC-checker{
+	min-height: 40%;
+}
 
 .scrolling-area{
 	position: relative;
