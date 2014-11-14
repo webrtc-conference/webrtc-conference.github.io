@@ -123,45 +123,24 @@ Main components
     font-weight: 300;
   }
 }
-/*
-#top-img-area {
-	display: block;
-	height: 100%;
-}
-.top-img {
-	min-height: 100%;
-	background-size: cover;
-	height: auto;
-	width: auto;
-	background-position: center center;
-	background-color: rgb(180,180,180);
-	overflow: hidden;
-	text-align: center;
-	position: relative;
-	background-image: url(../img/160970664.jpg);
-	background-attachment: fixed;
-	background-repeat: no-repeat;
 
-}
-.top-img-desc {
-	position: absolute;
-	z-index: 10;
-	bottom: 30%;
-	left: 10%;
-}
-.top-img-desc h1 {
-	font-family: 'anton', sans-serif;
-	color: rgba(210, 219, 255, 0.75);
-	font-size: 60px;
-}
-@media only screen and (min-width: 768px) {
-	.top-img-desc h1{
-		font-size: 100px;
-	}
+/* -------------------------------- 
+
+Google Form
+
+-------------------------------- */
+
+.error-message, .required-message, .ss-required-asterisk {
+  font-family: "Roboto";
+  color: rgb(196,59,29);
+  font-weight: 400;
+  font-size: 1.000rem;
+  font-style: normal;
 }
 
-#conf-desc-area{
-	padding-left: 10%;
-	padding-right: 10%;
+.ss-q-item-label {
+	width: 150px;
 }
-*/
+.ss-q-short {
+	width: 300px;
+}

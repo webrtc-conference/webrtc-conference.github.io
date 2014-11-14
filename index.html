@@ -53,6 +53,51 @@
 			</section>
 			<section>
 				<h2>申込み</h2>
+
+				<div class="ss-form" id="ss-form">
+					<form action="https://docs.google.com/forms/d/1wgp8GMmI8Uoxrfafa-w7qN5bu7v9nIATCwwINhHKygo/formResponse" method="POST" id="ss-form" target="hidden_iframe" onsubmit="submitted=true; registered();">
+						<ol role="list" class="ss-question-list" style="padding-left: 0">
+							<div class="ss-form-question errorbox-good" role="listitem">
+								<div dir="ltr" class="ss-item ss-item-required ss-text">
+									<div class="ss-form-entry">
+										<label class="ss-q-item-label" for="entry_1610712187">
+											<div class="ss-q-title">
+												名前
+												<label for="itemView.getDomIdToLabel()" aria-label="（必須）"></label>
+												<span class="ss-required-asterisk">*</span>
+											</div>
+											<div class="ss-q-help ss-secondary-text" dir="ltr"></div>
+										</label>
+										<input type="text" name="entry.1610712187" value="" class="ss-q-short" id="entry_1610712187" dir="auto" aria-label="名前  " aria-required="true" required="" title="">
+										<div class="error-message" id="1405756849_errorMessage"></div>
+									</div>
+								</div>
+							</div>
+							<div class="ss-form-question errorbox-good" role="listitem">
+								<div dir="ltr" class="ss-item ss-item-required ss-text">
+									<div class="ss-form-entry">
+										<label class="ss-q-item-label" for="entry_2135789733">
+											<div class="ss-q-title">
+												メールアドレス
+												<label for="itemView.getDomIdToLabel()" aria-label="（必須）"></label>
+												<span class="ss-required-asterisk">*</span>
+											</div>
+											<div class="ss-q-help ss-secondary-text" dir="ltr"></div>
+										</label>
+										<input type="text" name="entry.2135789733" value="" class="ss-q-short" id="entry_2135789733" dir="auto" aria-label="メールアドレス  メールアドレスを入力してください" aria-required="true" required="" pattern="[a-zA-Z0-9_\.\+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-\.]+" title="&#12513;&#12540;&#12523;&#12450;&#12489;&#12524;&#12473;&#12434;&#20837;&#21147;&#12375;&#12390;&#12367;&#12384;&#12373;&#12356;">
+									</div>
+								</div>
+							</div>
+
+							<input type="hidden" name="draftResponse" value="[,,&quot;277773578088802175&quot;]">
+							<input type="hidden" name="pageHistory" value="0">
+							<input type="hidden" name="fbzx" value="277773578088802175">
+
+							<input type="submit" name="submit" value="&#36865;&#20449;" id="ss-submit" class="jfk-button jfk-button-action ">
+
+						</ol>
+					</form>
+				</div>
 			</section>
 			<section>
 				<h2>問合せ</h2>
@@ -75,5 +120,7 @@
 
 	<script src="./dist/js/jquery-1.11.1.min.js"></script>
 	<script src="./dist/js/bootstrap.min.js"></script>
+	<script src="./js/script.js"></script>
 </body>
+<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" ></iframe>
 </html>
