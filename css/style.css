@@ -1,22 +1,147 @@
-#top-img-area {
-	display: block;
-	height: 80%;
+/* -------------------------------- 
+
+Primary style
+
+-------------------------------- */
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-.top-img {
-	width: 100%;
-	overflow: hidden;
-	height: 100%;
-	text-align: center;
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 100%;
+  /*font-family: "Roboto", sans-serif;*/
+  color: #3d3536;
+  background-color: white;
+}
+
+body, html {
+  /* important */
+  height: 100%;
+}
+
+a {
+
+  text-decoration: none;
+}
+
+footer {
 	position: relative;
 }
-.top-img img{
+
+/* -------------------------------- 
+
+Modules - reusable parts of our design
+
+-------------------------------- */
+.container {
+  /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
+  width: 90%;
+  max-width: 768px;
+  margin: 0 auto;
+}
+.container::after {
+  /* clearfix */
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* -------------------------------- 
+
+Main components 
+
+-------------------------------- */
+
+
+.main-content{
+	min-height: 100%;
+	position: relative;
+	z-index: 1;
+}
+
+.fixed-area{
 	position: relative;
 	min-height: 100%;
-	min-width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-attachment: fixed;
+}
+
+.fixed-area h1, .fixed-area h2 {
+
+}
+
+.top-img-area {
+	background-image: url(../img/160970664.jpg);
+}
+.second-img-area {
+	background-image: url(../img/509011887.jpg);
+}
+.top-img-desc {
+	position: absolute;
+	z-index: 10;
+	bottom: 20%;
+	left: 10%;
+}
+.top-img-desc h1 {
+	font-family: 'anton', sans-serif;
+	color: rgba(210, 219, 255, 0.75);
+	font-size: 60px;
+	text-shadow: 4px 6px 15px rgba(0, 0, 0, 0.8);
+}
+@media only screen and (min-width: 768px) {
+	.top-img-desc h1{
+		font-size: 80px;
+	}
+}
+
+.scrolling-area{
+	position: relative;
+	padding: 4em 0;
+	line-height: 1.6;
+	box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+	z-index: 2;
+}
+.conf-desc-area{
+	background-color: rgba(216, 216, 216, 1);
+	color: rgba(71, 55, 55, 1);
+}
+@media only screen and (min-width: 768px) {
+  .conf-desc-area {
+    padding: 8em 0;
+    font-size: 20px;
+    font-size: 1.25rem;
+    line-height: 2;
+    font-weight: 300;
+  }
+}
+/*
+#top-img-area {
+	display: block;
+	height: 100%;
+}
+.top-img {
+	min-height: 100%;
+	background-size: cover;
 	height: auto;
 	width: auto;
-	left: 100%;
-	margin-left: -200%;
+	background-position: center center;
+	background-color: rgb(180,180,180);
+	overflow: hidden;
+	text-align: center;
+	position: relative;
+	background-image: url(../img/160970664.jpg);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+
 }
 .top-img-desc {
 	position: absolute;
@@ -27,10 +152,16 @@
 .top-img-desc h1 {
 	font-family: 'anton', sans-serif;
 	color: rgba(210, 219, 255, 0.75);
-	font-size: 80px;
+	font-size: 60px;
+}
+@media only screen and (min-width: 768px) {
+	.top-img-desc h1{
+		font-size: 100px;
+	}
 }
 
 #conf-desc-area{
 	padding-left: 10%;
 	padding-right: 10%;
 }
+*/
