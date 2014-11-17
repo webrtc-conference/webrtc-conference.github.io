@@ -113,10 +113,11 @@ Main components
 .conf-desc-area{
 	background-color: rgba(216, 216, 216, 1);
 	color: rgba(71, 55, 55, 1);
+	padding-left: 5%;
+	padding-right: 5%;
 }
 @media only screen and (min-width: 768px) {
   .conf-desc-area {
-    padding: 8em 0;
     font-size: 20px;
     font-size: 1.25rem;
     line-height: 2;
