@@ -9,6 +9,12 @@ body {
 	background-position: center center;
 	color: #fff;
 	height: 100%;
+h1, p {
+	text-shadow: black 0 0 2px;
+}
+
+a.btn {
+	text-shadow: none;
 }
 
 a,
