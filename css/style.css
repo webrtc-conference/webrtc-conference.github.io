@@ -127,6 +127,9 @@ Main components
     font-weight: 300;
   }
 }
+.webRTC-checker {
+	display: none;
+}
 
 /* -------------------------------- 
 
