@@ -1,26 +1,46 @@
 <html>
-<head>
+<head prefix=”og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/article#”>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>WebRTC Conference Japan</title>
-	<meta name="description" content="WebRTC Conference Japan teaser site">
+	<meta name="description" content="WebRTC Conference Japanに関するサイトです。カンファレンスの情報を公開しており、参加申込が可能です。">
+
+	<!-- og for facebook page -->
 	<meta property="og:locale" content="ja_JP">
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="WebRTC Conferece Japan">
-	<meta property="og:description" content="WebRTC Conference Japan teaser site">
-	<meta property="og:url" content="http://xxxxxxxx.com">
+	<meta property="og:description" content="WebRTC Conference Japanに関するサイトです。カンファレンスの情報を公開しており、参加申込が可能です。">
+	<meta property="og:url" content="http://webrtcconf.jp/">
+	<meta property="image" content="http://webrtcconf.jp/img/webRTC_conf_logo.png">
 	<meta property="og:site_name" content="WebRTC Conference Japan">
 
-	<link href='http://fonts.googleapis.com/css?family=Anton' rel='stylesheet' type='text/css'>
 
+	<!-- og for twitter card -->
+	<meta name="twitter:card" content="summary" />
+	<meta name="twitter:site" content="@WebRTC_Conf_jp" />
+	<meta name="twitter:title" content="WebRTC Conference Japan" />
+	<meta name="twitter:description" content="WebRTC Conference Japanに関するサイトです。カンファレンスの情報を公開しており、参加申込が可能です。" />
+	<meta name="twitter:image" content="http://webrtcconf.jp/img/twcard.png" />
+	<meta name="twitter:url" content="http://webrtcconf.jp/" />
+
+	<!-- style -->
+	<link href='http://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
 	<link rel="stylesheet" href="./dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="./css/style.css">
 
 
 </head>
 <body>
-
-	<header>
+	<!-- get the facebook sdk -->
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/ja_KS/sdk.js#xfbml=1&appId=307739709419676&version=v2.0";
+		fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
 
 	</header>
 
@@ -102,8 +122,10 @@
 			<section>
 				<h2>問合せ</h2>
 					<div class="social">
+						<div class="fb-like-box" data-href="https://www.facebook.com/webRTCConfJapan" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div>
 						<a href="" target="_blank">tw</a>
 						<a href="" target="_blank">fb</a>
+
 					</div>
 			</section>
 
