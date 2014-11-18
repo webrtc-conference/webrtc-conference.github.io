@@ -143,8 +143,18 @@ Google Form
 }
 
 .ss-q-item-label {
-	width: 150px;
+	margin-top: 8px;
+	margin-bottom: 4px;
 }
-.ss-q-short {
-	width: 300px;
+.ss-q-item-label {
+	min-width: 150px;
+}
+.ss-q-short, .ss-q-long, #ss-submit {
+	margin-top: 8px;
+	margin-bottom: 4px;
+}
+.ss-q-short, .ss-q-long {
+	min-width: 300px;
+	max-width: 500px;
+	width: 70%;
 }
