@@ -65,6 +65,10 @@ footer {
 	}
 }
 
+.contact {
+	margin-top: 20px;
+}
+
 .copyright {
 	text-align: center;
 }
@@ -75,4 +79,8 @@ h1 {
 
 .fb-like-box {
 	background-color: rgba(255, 255, 255, 0.75);
+}
+
+.sns-btn {
+	height: 34px;
 }
