@@ -1,155 +1,90 @@
 <html>
 <head prefix=”og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/article#”>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>WebRTC Conference Japan</title>
-	<meta name="description" content="WebRTC Conference Japanに関するサイトです。カンファレンスの情報を公開しており、参加申込が可能です。">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>WebRTC Conference Japan</title>
+<meta name="description" content="WebRTC Conference Japanに関するサイトです。カンファレンスの情報を公開しており、参加申込が可能です。">
 
-	<!-- og for facebook page -->
-	<meta property="og:locale" content="ja_JP">
-	<meta property="og:type" content="website">
-	<meta property="og:title" content="WebRTC Conferece Japan">
-	<meta property="og:description" content="WebRTC Conference Japanに関するサイトです。カンファレンスの情報を公開しており、参加申込が可能です。">
-	<meta property="og:url" content="http://webrtcconf.jp/">
-	<meta property="image" content="http://webrtcconf.jp/img/webRTC_conf_logo.png">
-	<meta property="og:site_name" content="WebRTC Conference Japan">
+<!-- og for facebook page -->
+<meta property="og:locale" content="ja_JP">
+<meta property="og:type" content="website">
+<meta property="og:title" content="WebRTC Conferece Japan">
+<meta property="og:description" content="WebRTC Conference Japanに関するサイトです。カンファレンスの情報を公開しており、参加申込が可能です。">
+<meta property="og:url" content="http://webrtcconf.jp/">
+<meta property="image" content="http://webrtcconf.jp/img/webRTC_conf_logo.png">
+<meta property="og:site_name" content="WebRTC Conference Japan">
 
 
-	<!-- og for twitter card -->
-	<meta name="twitter:card" content="summary" />
-	<meta name="twitter:site" content="@WebRTC_Conf_jp" />
-	<meta name="twitter:title" content="WebRTC Conference Japan" />
-	<meta name="twitter:description" content="WebRTC Conference Japanに関するサイトです。カンファレンスの情報を公開しており、参加申込が可能です。" />
-	<meta name="twitter:image" content="http://webrtcconf.jp/img/twcard.png" />
-	<meta name="twitter:url" content="http://webrtcconf.jp/" />
+<!-- og for twitter card -->
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@WebRTC_Conf_jp" />
+<meta name="twitter:title" content="WebRTC Conference Japan" />
+<meta name="twitter:description" content="WebRTC Conference Japanに関するサイトです。カンファレンスの情報を公開しており、参加申込が可能です。" />
+<meta name="twitter:image" content="http://webrtcconf.jp/img/twcard.png" />
+<meta name="twitter:url" content="http://webrtcconf.jp/" />
 
-	<!-- style -->
-	<link href='http://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
-	<link rel="stylesheet" href="./css/bootstrap.min.css">
-	<link rel="stylesheet" href="./css/style.css">
+<!-- style -->
+<link href='http://fonts.googleapis.com/css?family=Anton' rel='stylesheet'>
+<link rel="stylesheet" href="./css/bootstrap.min.css">
+<link rel="stylesheet" href="./css/style.css">
 
 
 </head>
 <body>
-	<!-- get the facebook sdk -->
-	<div id="fb-root"></div>
-	<script>(function(d, s, id) {
-		var js, fjs = d.getElementsByTagName(s)[0];
-		if (d.getElementById(id)) return;
-		js = d.createElement(s); js.id = id;
-		js.src = "//connect.facebook.net/ja_KS/sdk.js#xfbml=1&appId=307739709419676&version=v2.0";
-		fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));
-	</script>
+<!-- get the facebook sdk -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+	var js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) return;
+	js = d.createElement(s); js.id = id;
+	js.src = "//connect.facebook.net/ja_KS/sdk.js#xfbml=1&appId=307739709419676&version=v2.0";
+	fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
 
-	</header>
-
-	<main class="main-content">
-		<div class="top-img-area fixed-area">
-			<div class="top-img-desc">
+<main>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-8">
 				<h1>WebRTC<br>Conference<br>Japan</h1>
-			</div>
-		</div>
-
-		<div class="conf-desc-area scrolling-area">
-
-			<section class="conf-summary">
-				<h2>WebRTC Conference Japan開催決定！</h2>
-
-				<p>2015年2月5日〜6日</p>
-				<p>
+				<p class="h1">2015年2月5日〜6日</p>
+				<p class="h3">
 					<a href="http://solacity.jp/cc/" target="_blank">ソラシティ カンファレンスセンター</a><br>
-					JR御茶ノ水駅徒歩１分・東京メトロ新御茶ノ水駅直結
 				</p>
+				<p>JR御茶ノ水駅徒歩１分・東京メトロ新御茶ノ水駅直結</p>
 				<p>参加費・未定 / 定員・100名</p>
 				<p>主催・WebRTC Conference Japan 実行委員会</p>
-			</section>
-			<section>
-				<h2>お問い合わせ</h2>
+				<p>
+					<a type="button" class="btn btn-default" href="./" target="_blank">お問い合わせ</a>
+				</p>
+			</div>
+		</div>
+	</div>
+</main>
 
-				<div class="ss-form" id="ss-form">
-					<form action="https://docs.google.com/forms/d/1wgp8GMmI8Uoxrfafa-w7qN5bu7v9nIATCwwINhHKygo/formResponse" method="POST" id="ss-form" target="hidden_iframe" onsubmit="submitted=true; registered();">
-						<ol role="list" class="ss-question-list" style="padding-left: 0">
-							<div class="ss-form-question errorbox-good" role="listitem">
-								<div dir="ltr" class="ss-item ss-item-required ss-text">
-									<div class="ss-form-entry">
-										<label class="ss-q-item-label" for="entry_1610712187">
-											<div class="ss-q-title">
-												お名前
-												<label for="itemView.getDomIdToLabel()" aria-label="（必須）"></label>
-												<span class="ss-required-asterisk">*</span>
-											</div>
-											<div class="ss-q-help ss-secondary-text" dir="ltr"></div>
-										</label>
-										<input type="text" name="entry.1610712187" value="" class="ss-q-short" id="entry_1610712187" dir="auto" aria-label="名前  " aria-required="true" required="" title="">
-										<div class="error-message" id="1405756849_errorMessage"></div>
-									</div>
-								</div>
-							</div>
-							<div class="ss-form-question errorbox-good" role="listitem">
-								<div dir="ltr" class="ss-item ss-item-required ss-text">
-									<div class="ss-form-entry">
-										<label class="ss-q-item-label" for="entry_2135789733">
-											<div class="ss-q-title">
-												メールアドレス
-												<label for="itemView.getDomIdToLabel()" aria-label="（必須）"></label>
-												<span class="ss-required-asterisk">*</span>
-											</div>
-											<div class="ss-q-help ss-secondary-text" dir="ltr"></div>
-										</label>
-										<input type="text" name="entry.2135789733" value="" class="ss-q-short" id="entry_2135789733" dir="auto" aria-label="メールアドレス  メールアドレスを入力してください" aria-required="true" required="" pattern="[a-zA-Z0-9_\.\+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-\.]+" title="&#12513;&#12540;&#12523;&#12450;&#12489;&#12524;&#12473;&#12434;&#20837;&#21147;&#12375;&#12390;&#12367;&#12384;&#12373;&#12356;">
-									</div>
-								</div>
-							</div>
-
-							<div class="ss-form-question errorbox-good" role="listitem">
-								<div dir="ltr" class="ss-item  ss-paragraph-text">
-									<div class="ss-form-entry">
-										<label class="ss-q-item-label" for="entry_27885399">
-											<div class="ss-q-title">内容</div>
-											<div class="ss-q-help ss-secondary-text" dir="ltr"></div>
-										</label>
-										<textarea name="entry.27885399" rows="8" cols="0" class="ss-q-long" id="entry_27885399" dir="auto" aria-label="問合せ内容  "></textarea>
-										<div class="error-message" id="335067214_errorMessage"></div>
-									</div>
-								</div>
-							</div>
-
-							<input type="hidden" name="draftResponse" value="[,,&quot;277773578088802175&quot;]">
-							<input type="hidden" name="pageHistory" value="0">
-							<input type="hidden" name="fbzx" value="277773578088802175">
-
-							<input type="submit" name="submit" value="&#36865;&#20449;" id="ss-submit" class="jfk-button jfk-button-action ">
-
-						</ol>
-					</form>
-				</div>
-
+<aside>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-offset-8 col-xs-4">
 				<div class="social">
-					<div class="fb-like-box" data-href="https://www.facebook.com/WebRTCConfJapan" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div>
-					<a href="" target="_blank">tw</a>
-					<a href="" target="_blank">fb</a>
+					<div class="fb-like-box" data-href="https://www.facebook.com/webRTCConfJapan" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div>
 				</div>
-			</section>
-
+			</div>
 		</div>
+	</div>
+</aside>
 
-		<div class="webRTC-checker fixed-area">
-			<h2>WebRTC Checker</h2>
-		</div>
-	</main>
-
-	<hr>
-
-	<footer>
+<footer>
+	<div class="container">
 		<p class="copyright">
-			<a href=""> - © 2014 WebRTC Conference Japan</a>
+			<a href="">Copyright &copy; 2014 WebRTC Conference Japan</a>
 		</p>
-	</footer>
+	</div>
+</footer>
 
-	<script src="./js/jquery-1.11.1.min.js"></script>
-	<script src="./js/bootstrap.min.js"></script>
-	<script src="./js/script.js"></script>
+
+<script src="./js/jquery-1.11.1.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script src="./js/script.js"></script>
 </body>
-<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" ></iframe>
 </html>
