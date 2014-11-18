@@ -76,28 +76,3 @@ h1 {
 .fb-like-box {
 	background-color: rgba(255, 255, 255, 0.75);
 }
-
-.error-message, .required-message, .ss-required-asterisk {
-  font-family: "Roboto";
-  color: rgb(196,59,29);
-  font-weight: 400;
-  font-size: 1.000rem;
-  font-style: normal;
-}
-
-.ss-q-item-label {
-	margin-top: 8px;
-	margin-bottom: 4px;
-}
-.ss-q-item-label {
-	min-width: 150px;
-}
-.ss-q-short, .ss-q-long, #ss-submit {
-	margin-top: 8px;
-	margin-bottom: 4px;
-}
-.ss-q-short, .ss-q-long {
-	min-width: 300px;
-	max-width: 500px;
-	width: 70%;
-}
