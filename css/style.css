@@ -1,5 +1,7 @@
-html {
-	height: 100%;
+@media (min-width: 768px) {
+	html, body {
+		height: 100%;
+	}
 }
 
 body {
@@ -8,7 +10,8 @@ body {
 	background-repeat: no-repeat no-repeat;
 	background-position: center center;
 	color: #fff;
-	height: 100%;
+}
+
 h1, p {
 	text-shadow: black 0 0 2px;
 }
@@ -23,24 +26,43 @@ a:active {
 	color: #fff;
 }
 
-main {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-}
-
 aside {
-	position: absolute;
-	bottom: 40px;
-	right: 0;
-	width: 100%;
+	margin-top: 50px;
 }
 
 footer {
-	position: absolute;
-	bottom: 0;
-	width: 100%;
+	margin-top: 50px;
+}
+
+@media (min-width: 768px) {
+	main {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		pointer-events: none;
+	}
+
+	aside {
+		position: absolute;
+		bottom: 40px;
+		right: 0;
+		width: 100%;
+		pointer-events: none;
+		margin-top: 0;
+	}
+
+	.col-main,
+	.col-aside {
+		pointer-events: auto;
+	}
+
+	footer {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		margin-top: 0;
+	}
 }
 
 .copyright {
