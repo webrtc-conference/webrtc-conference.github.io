@@ -146,17 +146,12 @@ Google Form
 .ss-q-item-label {
 	min-width: 150px;
 }
-.ss-q-short {
+.ss-q-short, .ss-q-long, #ss-submit {
+	margin-top: 8px;
+	margin-bottom: 4px;
+}
+.ss-q-short, .ss-q-long {
 	min-width: 300px;
 	max-width: 500px;
 	width: 70%;
-}
-.ss-q-long {
-	min-width: 300px;
-	max-width: 500px;
-	width: 70%;
-}
-
-#ss-submit {
-	margin-top: 10px;
 }
