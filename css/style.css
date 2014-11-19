@@ -77,10 +77,38 @@ h1 {
 	font-size: 64px;
 }
 
-.fb-like-box {
-	background-color: rgba(255, 255, 255, 0.75);
+.header {
+	position: absolute;
+	right: 0;
+	top: 10px;
+}
+@media (max-width: 768px) {
+	.header {
+		display: none;
+	}
 }
 
-.sns-btn {
-	height: 34px;
+.share {
+	width: 292px;
+	height: 63px;
+	text-align: center;
+}
+@media (min-width: 768px) {
+	.share, .share-title, .follow-title {
+		display: none;
+	}
+}
+
+.share-item {
+	text-align: top;
+	margin: 0 5px;
+	display: inline-block;
+}
+
+.follow {
+	height: 239px;
+}
+
+.fb-like-box {
+	background-color: rgba(255, 255, 255, 0.75);
 }
