@@ -6,6 +6,7 @@
 
 body {
 	background-image: url(../img/509011887.jpg);
+	background-attachment: fixed;
 	background-size: cover;
 	background-repeat: no-repeat no-repeat;
 	background-position: center center;
@@ -13,7 +14,7 @@ body {
 }
 
 h1, p {
-	text-shadow: black 0 0 2px;
+	text-shadow: black 0 0 5px;
 }
 
 a.btn {
@@ -27,7 +28,7 @@ a:active {
 }
 
 aside {
-	margin-top: 50px;
+	margin-top: 30px;
 }
 
 footer {
@@ -63,10 +64,24 @@ footer {
 		width: 100%;
 		margin-top: 0;
 	}
+
+}
+
+@media (max-width: 768px) {
+	h3, .h3 {
+		font-size: 20px;
+
+	}
 }
 
 .contact {
 	margin-top: 20px;
+	margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+	.contact {
+		margin-top: 60px;
+	}
 }
 
 .copyright {
