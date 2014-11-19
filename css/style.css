@@ -77,6 +77,16 @@ h1 {
 	font-size: 64px;
 }
 
+.header {
+	position: absolute;
+	right: 0;
+	top: 5px;
+}
+
+.social-item {
+
+}
+
 .share {
 	width: 292px;
 	height: 63px;
