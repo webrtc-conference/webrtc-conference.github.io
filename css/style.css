@@ -80,7 +80,7 @@ h1 {
 .header {
 	position: absolute;
 	right: 0;
-	top: 5px;
+	top: 10px;
 }
 @media (max-width: 768px) {
 	.header {
