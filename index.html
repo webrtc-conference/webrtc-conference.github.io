@@ -32,6 +32,17 @@
 </head>
 <body>
 
+<!-- get the facebook sdk -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+	var js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) return;
+	js = d.createElement(s); js.id = id;
+	js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&appId=307739709419676&version=v2.0";
+	fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+
 <main>
 	<div class="container">
 		<div class="row">
@@ -42,17 +53,49 @@
 					<a href="http://solacity.jp/cc/" target="_blank">ソラシティ カンファレンスセンター</a><br>
 				</p>
 				<p>JR御茶ノ水駅徒歩１分・東京メトロ新御茶ノ水駅直結</p>
-				<p>参加費・未定 / 定員・100名</p>
+				<p>参加費・未定 / 定員・200名</p>
 				<p>主催・WebRTC Conference Japan 実行委員会</p>
 				<p class="contact">
 					<a type="button" class="btn btn-default" href="https://docs.google.com/forms/d/1wgp8GMmI8Uoxrfafa-w7qN5bu7v9nIATCwwINhHKygo/viewform" target="_blank">お問い合わせ</a>
-					<a href="https://twitter.com/WebRTC_Conf_jp" target="_blank"><img class="sns-btn" src="./img/twitter.png" alt="twitter account"></a>
-					<a href="https://www.facebook.com/WebRTCConfJapan" target="_blank"><img class="sns-btn" src="./img/facebook.png" alt="facebook account"></a>
 				</p>
 			</div>
 		</div>
 	</div>
 </main>
+
+<aside>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-offset-7 col-sm-5 col-md-offset-8 col-md-4 col-aside"
+				<div class="social">
+					<div class="share">
+						<div class="share-item">
+							<div class="fb-like" data-href="http://webrtcconf.jp/" data-layout="box_count" data-action="like" data-show-faces="false" data-share="false"></div>
+						</div>
+						<div class="share-item">
+							<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://webrtcconf.jp/" data-text="WebRTC Conference Japan｜2015年2月5-6日" data-via="WebRTC_conf_jp" data-related="WebRTC_conf_jp" data-hashtags="WebRTCConfJP" data-dnt="true" data-count="vertical" >Tweet</a>
+							<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+						</div>
+						<div class="share-item">
+							<a href="http://b.hatena.ne.jp/entry/http://webrtcconf.jp/" class="hatena-bookmark-button" data-hatena-bookmark-title="WebRTC Conference Japan" data-hatena-bookmark-layout="vertical-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+						</div>
+					</div>
+					<div class="follow">
+						<div class="fb-like-box"
+							data-href="https://www.facebook.com/webRTCConfJapan"
+							data-colorscheme="light"
+							data-show-faces="true"
+							data-header="false"
+							data-stream="false"
+							data-show-border="false"
+							data-width="292"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</aside>
+
 
 <footer>
 	<div class="container">
