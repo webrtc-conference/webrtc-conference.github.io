@@ -83,7 +83,7 @@ h1 {
 	top: 5px;
 }
 @media (max-width: 768px) {
-	#header {
+	.header {
 		display: none;
 	}
 }
