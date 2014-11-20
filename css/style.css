@@ -65,12 +65,74 @@ footer {
 		margin-top: 0;
 	}
 
+h1, .h1 {
+	font-size: 48px;
+	font-family: 'Fredericka the Great', cursive;
 }
 
-@media (max-width: 768px) {
-	h3, .h3 {
-		font-size: 20px;
+@media (min-width: 768px) {
+	h1, .h1 {
+		font-size: 64px;
+	}
+}
 
+@media (min-width: 992px) {
+	h1, .h1 {
+		font-size: 96px;
+	}
+}
+
+h2, .h2 {
+	font-size: 18px;
+}
+
+@media (min-width: 768px) {
+	h2, .h2 {
+		font-size: 24px;
+	}
+}
+
+@media (min-width: 992px) {
+	h2, .h2 {
+		font-size: 30px;
+	}
+}
+
+h3, .h3 {
+	font-size: 16px;
+}
+
+@media (min-width: 768px) {
+	h3, .h3 {
+		font-size: 24px;
+	}
+}
+
+h4, .h4 {
+	font-size: 16px;
+}
+
+@media (min-width: 768px) {
+	h4, .h4 {
+		font-size: 18px;
+	}
+}
+
+/*
+## others
+*/
+
+.tagline {
+	margin-top: 20px;
+}
+
+.date {
+	margin-top: 40px;
+}
+
+@media (min-width: 768px) {
+	.date {
+		margin-top: 80px;
 	}
 }
 
@@ -82,9 +144,6 @@ footer {
 	text-align: center;
 }
 
-h1 {
-    font-family: 'Fredericka the Great', cursive;
-	font-size: 96px;
 }
 
 .header {
@@ -128,6 +187,3 @@ h1 {
     background-color: transparent;
 }
 
-.h2 {
-    margin-top: 40px;
-}
