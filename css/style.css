@@ -15,7 +15,8 @@ html {
 
 body {
 	background-image: url(../img/509011887.jpg);
-	background-size: cover;
+	-webkit-background-size: cover;
+ 	        background-size: cover;
 	background-repeat: no-repeat no-repeat;
 	background-position: center center;
 }
@@ -160,21 +161,30 @@ h4, .h4 {
 	margin-top: 40px;
 }
 
-.panel {
-	background-color: transparent;
-	box-shadow: 0 0 5px rgba(0,0,0,0.25), inset 0 0 5px rgba(0,0,0,0.25);
-}
-
-.btn {
-	box-shadow: 0 0 5px rgba(0,0,0,0.25);
-}
-
 .contact .hidden-xs .btn + .btn {
 	margin-left: 5px;
 }
 
 .contact .visible-xs-block .btn + .btn {
 	margin-top: 10px;
+}
+
+
+/*
+## others
+*/
+
+.panel {
+	background-color: transparent;
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25), inset 0 0 5px rgba(0, 0, 0, 0.25);
+	   -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25), inset 0 0 5px rgba(0, 0, 0, 0.25);
+	        box-shadow: 0 0 5px rgba(0, 0, 0, 0.25), inset 0 0 5px rgba(0, 0, 0, 0.25);
+}
+
+.btn {
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+	   -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+     	    box-shadow: 0 0 5px rgba(0,0,0,0.25);
 }
 
 .share-items-xs {
