@@ -161,13 +161,15 @@ h4, .h4 {
 
 .share {
 	width: 292px;
-	height: 63px;
+	padding: 10px 0;
 	text-align: center;
 }
 @media (min-width: 768px) {
 	.share, .share-title, .follow-title {
 		display: none;
 	}
+	background-color: rgba(255, 255, 255, 0.5);
+	height: 82px;
 }
 
 .share-item {
