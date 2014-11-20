@@ -37,7 +37,7 @@ footer {
 
 @media (min-width: 768px) {
 	body {
-		margin-bottom: 30px;	/* @footer-height */
+		padding-bottom: 50px;	/* @footer-height */
 	}
 
 	main {
@@ -142,7 +142,7 @@ h4, .h4 {
 }
 
 /*
-## others
+## margin
 */
 
 .tagline {
@@ -171,6 +171,9 @@ h4, .h4 {
 	margin-top: 10px;
 }
 
+.panel.hidden-xs {
+	margin-bottom: 0;	/* conflict with margin-bottom of body */
+}
 
 /*
 ## others
