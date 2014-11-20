@@ -3,7 +3,6 @@ When use less, declare this variable.
 @footer-height: 30px;
 */
 
-
 /*
 # structure
 */
@@ -19,6 +18,9 @@ body {
  	        background-size: cover;
 	background-repeat: no-repeat no-repeat;
 	background-position: center center;
+	/* The url is relative to the document, not to the css file! */
+	/* Prefer absolute urls to avoid confusion. */
+	-ms-behavior: url(js/backgroundsize.min.htc);
 }
 
 /*
