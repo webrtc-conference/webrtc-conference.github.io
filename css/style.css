@@ -169,7 +169,7 @@ h4, .h4 {
 }
 
 .share-item {
-	text-align: top;
+	vertical-align: top;
 	margin: 0 5px;
 	display: inline-block;
 }
