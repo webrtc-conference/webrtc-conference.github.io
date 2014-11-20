@@ -152,11 +152,15 @@ h4, .h4 {
 	position: absolute;
 	right: 0;
 	top: 10px;
+.contact .hidden-xs .btn + .btn {
+	margin-left: 5px;
 }
 @media (max-width: 768px) {
 	.header {
 		display: none;
 	}
+.contact .visible-xs-block .btn + .btn {
+	margin-top: 10px;
 }
 
 .share {
