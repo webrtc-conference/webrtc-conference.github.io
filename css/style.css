@@ -25,19 +25,19 @@ body {
 
 @media (min-width: 768px) {
 	body {
-		background-image: url(../img/509011887-1050x700-q50.jpg);
+		background-image: url(../img/509011887-1000x900-q50.jpg);
 	}
 }
 
 @media (min-width: 992px) {
 	body {
-		background-image: url(../img/509011887-1200x800-q50.jpg);
+		background-image: url(../img/509011887-1200x900-q50.jpg);
 	}
 }
 
 @media (min-width: 1200px) {
 	body {
-		background-image: url(../img/509011887-1920x1280-q30.jpg);
+		background-image: url(../img/509011887-1350x900-q50.jpg);
 	}
 }
 
