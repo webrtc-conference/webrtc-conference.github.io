@@ -18,7 +18,6 @@ body {
  	        background-size: cover;
 	background-repeat: no-repeat no-repeat;
 	background-position: center center;
-	background-attachment: fixed;
 	/* The url is relative to the document, not to the css file! */
 	/* Prefer absolute urls to avoid confusion. */
 	-ms-behavior: url(js/backgroundsize.min.htc);
