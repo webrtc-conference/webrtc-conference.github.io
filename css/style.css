@@ -13,7 +13,7 @@ html {
 }
 
 body {
-	background-image: url(../img/509011887-lg.jpg);
+	background-image: url(../img/509011887-736x736-q50.jpg);
 	-webkit-background-size: cover;
  	        background-size: cover;
 	background-repeat: no-repeat no-repeat;
@@ -21,6 +21,24 @@ body {
 	/* The url is relative to the document, not to the css file! */
 	/* Prefer absolute urls to avoid confusion. */
 	-ms-behavior: url(js/backgroundsize.min.htc);
+}
+
+@media (min-width: 768px) {
+	body {
+		background-image: url(../img/509011887-1050x700-q50.jpg);
+	}
+}
+
+@media (min-width: 992px) {
+	body {
+		background-image: url(../img/509011887-1200x800-q50.jpg);
+	}
+}
+
+@media (min-width: 1200px) {
+	body {
+		background-image: url(../img/509011887-1920x1280-q30.jpg);
+	}
 }
 
 /*
