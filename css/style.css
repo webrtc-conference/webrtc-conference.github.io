@@ -13,6 +13,7 @@ html {
 }
 
 body {
+	font-family: "Helvetica Neue", Helvetica, Arial, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
 	background-image: url(../img/509011887-736x736-q50.jpg);
 	-webkit-background-size: cover;
  	        background-size: cover;
