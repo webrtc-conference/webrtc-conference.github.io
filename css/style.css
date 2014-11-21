@@ -1,20 +1,81 @@
-@media (min-width: 768px) {
-	html, body {
-		height: 100%;
-	}
+/*
+When use less, declare this variable.
+@footer-height: 30px;
+*/
+
+/*
+# structure
+*/
+
+html {
+	min-height: 100%;
+	position: relative;
 }
 
 body {
 	background-image: url(../img/509011887-lg.jpg);
-	background-attachment: fixed;
-	background-size: cover;
+	-webkit-background-size: cover;
+ 	        background-size: cover;
 	background-repeat: no-repeat no-repeat;
 	background-position: center center;
-	color: #fff;
+	/* The url is relative to the document, not to the css file! */
+	/* Prefer absolute urls to avoid confusion. */
+	-ms-behavior: url(js/backgroundsize.min.htc);
 }
 
-h1, p {
-	text-shadow: black 0 0 5px;
+/*
+## for xs only
+*/
+
+footer {
+	margin-top: 50px;
+}
+
+/*
+## for sm ~ lg
+*/
+
+@media (min-width: 768px) {
+	body {
+		padding-bottom: 50px;	/* @footer-height */
+	}
+
+	main {
+		pointer-events: none;
+	}
+
+	.like-items {
+		position: absolute;
+		bottom: 50px;    /* (@footer-height + 20px) */
+		width: 100%;
+		pointer-events: none;
+	}
+
+	.col-main,
+	.col-aside {
+		pointer-events: auto;
+	}
+
+	footer {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		height: 30px;    /* @footer-height */
+		margin-top: 0;
+	}
+}
+
+/*
+# styles
+*/
+
+/*
+## font
+*/
+
+body {
+	color: #fff;
+	text-shadow: 0 0 5px #000;
 }
 
 a.btn {
@@ -27,50 +88,74 @@ a:active {
 	color: #fff;
 }
 
-aside {
-	margin-top: 30px;
-}
-
-footer {
-	margin-top: 50px;
+h1, .h1 {
+	font-size: 48px;
+	font-family: 'Fredericka the Great', cursive;
 }
 
 @media (min-width: 768px) {
-	main {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		pointer-events: none;
+	h1, .h1 {
+		font-size: 64px;
 	}
-
-	aside {
-		position: absolute;
-		bottom: 50px;
-		right: 0;
-		width: 100%;
-		pointer-events: none;
-		margin-top: 0;
-	}
-
-	.col-main,
-	.col-aside {
-		pointer-events: auto;
-	}
-
-	footer {
-		position: absolute;
-		bottom: 0;
-		width: 100%;
-		margin-top: 0;
-	}
-
 }
 
-@media (max-width: 768px) {
-	h3, .h3 {
-		font-size: 20px;
+@media (min-width: 992px) {
+	h1, .h1 {
+		font-size: 96px;
+	}
+}
 
+h2, .h2 {
+	font-size: 18px;
+}
+
+@media (min-width: 768px) {
+	h2, .h2 {
+		font-size: 24px;
+	}
+}
+
+@media (min-width: 992px) {
+	h2, .h2 {
+		font-size: 30px;
+	}
+}
+
+h3, .h3 {
+	font-size: 16px;
+}
+
+@media (min-width: 768px) {
+	h3, .h3 {
+		font-size: 24px;
+	}
+}
+
+h4, .h4 {
+	font-size: 16px;
+}
+
+@media (min-width: 768px) {
+	h4, .h4 {
+		font-size: 18px;
+	}
+}
+
+/*
+## margin
+*/
+
+.tagline {
+	margin-top: 20px;
+}
+
+.date {
+	margin-top: 40px;
+}
+
+@media (min-width: 768px) {
+	.date {
+		margin-top: 80px;
 	}
 }
 
@@ -78,39 +163,46 @@ footer {
 	margin-top: 40px;
 }
 
-.copyright {
-	text-align: center;
+.contact .hidden-xs .btn + .btn {
+	margin-left: 5px;
 }
 
-h1 {
-    font-family: 'Fredericka the Great', cursive;
-	font-size: 96px;
+.contact .visible-xs-block .btn + .btn {
+	margin-top: 10px;
 }
 
-.header {
-	position: absolute;
-	right: 0;
-	top: 10px;
-}
-@media (max-width: 768px) {
-	.header {
-		display: none;
-	}
+.panel.hidden-xs {
+	margin-bottom: 0;	/* conflict with margin-bottom of body */
 }
 
-.share {
+/*
+## others
+*/
+
+.panel {
+	background-color: transparent;
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25), inset 0 0 5px rgba(0, 0, 0, 0.25);
+	   -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25), inset 0 0 5px rgba(0, 0, 0, 0.25);
+	        box-shadow: 0 0 5px rgba(0, 0, 0, 0.25), inset 0 0 5px rgba(0, 0, 0, 0.25);
+}
+
+.btn {
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+	   -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+     	    box-shadow: 0 0 5px rgba(0,0,0,0.25);
+}
+
+.share-items-xs {
 	width: 292px;
-	height: 63px;
+	padding: 10px 0;
 	text-align: center;
-}
-@media (min-width: 768px) {
-	.share, .share-title, .follow-title {
-		display: none;
-	}
+	background-color: #eee;
+	background-color: rgba(255, 255, 255, 0.5);
+	height: 82px;
 }
 
 .share-item {
-	text-align: top;
+	vertical-align: top;
 	margin: 0 5px;
 	display: inline-block;
 }
@@ -120,14 +212,6 @@ h1 {
 }
 
 .fb-like-box {
-	background-color: rgba(255, 255, 255, 0.75);
-}
-
-.panel {
-    float: left;
-    background-color: transparent;
-}
-
-.h2 {
-    margin-top: 40px;
+	background-color: #eee;
+	background-color: rgba(255, 255, 255, 0.5);
 }
